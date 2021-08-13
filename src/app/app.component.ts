@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   config: any;
   fullpage_api: any;
+  faCoffee = faCoffee;
 
   constructor() {
 
@@ -15,7 +17,7 @@ export class AppComponent {
     this.config = {
 
       // fullpage options
-      anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+      anchors: ['welcome', 'about-me', 'thirdPage', 'fourthPage', 'lastPage'],
       menu: '#menu',
 
       // fullpage callbacks

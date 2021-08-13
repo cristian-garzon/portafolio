@@ -9,6 +9,7 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { WhoAmIComponent } from './components/who-am-i/who-am-i.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
