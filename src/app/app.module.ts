@@ -10,6 +10,8 @@ import { AboutMeComponent } from './components/about-me/about-me.component';
 import { WhoAmIComponent } from './components/who-am-i/who-am-i.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserAnimationsModule,
     MatTabsModule,
     AngularFullpageModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

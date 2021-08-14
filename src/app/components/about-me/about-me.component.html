@@ -32,38 +32,19 @@
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators buttons">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
+          <div class="carousel-indicators buttons" *ngFor="let item of skill">
             <button
               type="button"
               data-bs-target="#carouselExampleIndicators"
               data-bs-slide-to="1"
               aria-label="Slide 2"
             ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="images">
-                <img
-                  src="../../../assets/images/skills/java.png" class="image" 
-                />
-              </div>
+            <div class="carousel-item active display-1" style="text-align: center;">skills</div>
+            <div class="carousel-item" *ngFor="let item of skill; let i = index;">
+                <img *ngIf="item.imageHashCode" [src]="url + item.id" class="img-thubnail rounded images image" >
             </div>
-            <div class="carousel-item">2</div>
-            <div class="carousel-item">3</div>
           </div>
           <button
             class="carousel-control-prev"
