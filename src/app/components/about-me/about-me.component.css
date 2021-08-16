@@ -41,6 +41,7 @@
 }
 .content-skills {
   position: absolute;
+  text-align: center;
 }
 .buttons {
   position: absolute;
@@ -65,4 +66,9 @@
   background-position: center center;
   background-attachment: fixed;
   background-attachment: fixed;
+}
+.images-skill{
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }

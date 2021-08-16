@@ -24,7 +24,6 @@
     </div>
   </div>
   <div class="skills">
-    <p class="display-1 title">skills</p>
     <div class="tecnologies paragraph">
       <div class="content-skills">
         <div
@@ -32,20 +31,19 @@
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-indicators buttons" *ngFor="let item of skill">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-          </div>
           <div class="carousel-inner">
-            <div class="carousel-item active display-1" style="text-align: center;">skills</div>
-            <div class="carousel-item" *ngFor="let item of skill; let i = index;">
-                <img *ngIf="item.imageHashCode" [src]="url + item.id" class="img-thubnail rounded images image" >
+            <div class="carousel-item active">
+              <p class="display-1">skills</p>
+            </div>
+            <div class="carousel-item my-3" *ngFor="let item of skill">
+              <img
+                *ngIf="item.imageHashCode"
+                [src]="url + item.id"
+                class="img-thubnail rounded images image"
+              />
             </div>
           </div>
+
           <button
             class="carousel-control-prev"
             type="button"
