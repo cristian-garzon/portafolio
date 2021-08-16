@@ -12,6 +12,7 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsComponent } from './components/projects/projects.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -29,8 +30,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     MatTabsModule,
     AngularFullpageModule,
     FontAwesomeModule,
-    HttpClientModule
-
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

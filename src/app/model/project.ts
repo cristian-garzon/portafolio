@@ -5,5 +5,7 @@ export class Project {
     urlRepo?: string;
     description?: string;
     images: Images[] = [];
-
+    start?: string
+    end?: string;
+    workStation?: string;
 }
