@@ -11,6 +11,7 @@ import { WhoAmIComponent } from './components/who-am-i/who-am-i.component';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     FooterComponent,
     AboutMeComponent,
     WhoAmIComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,

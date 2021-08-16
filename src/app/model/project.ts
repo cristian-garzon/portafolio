@@ -4,6 +4,6 @@ export class Project {
     id?: number;
     urlRepo?: string;
     description?: string;
-    image: Images[] = [];
+    images: Images[] = [];
 
 }

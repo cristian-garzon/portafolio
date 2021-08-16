@@ -20,8 +20,6 @@ export class AboutMeComponent implements OnInit {
   ngOnInit() {
     this.service.list().subscribe(skills => {
       this.skill = skills;
-      console.log("debug");
-      console.log(this.skill);
     }); 
   }
 
