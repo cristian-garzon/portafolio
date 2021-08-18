@@ -3,6 +3,7 @@ import { Project } from 'src/app/model/project';
 import { ProjectService } from 'src/app/services/project.service';
 import { DOCUMENT } from '@angular/common';
 import { Inject } from '@angular/core';
+import { endPoint } from 'src/app/config/app';
 
 @Component({
   selector: 'app-projects',
@@ -12,6 +13,7 @@ import { Inject } from '@angular/core';
 export class ProjectsComponent implements OnInit {
 
   projects: Project[] = [];
+  url = endPoint + '/Project/show_images/'
 
   constructor(private service: ProjectService,
     @Inject(DOCUMENT) private document: any) { }
@@ -19,10 +21,11 @@ export class ProjectsComponent implements OnInit {
   ngOnInit(): void {
     this.service.list().subscribe(project => {
       this.projects = project;
+      console.log(this.projects)
     });
+
   }
   public repository(project: Project):void{
-    console.log(project.urlRepo);
     window.open(project.urlRepo, "_blank");
   }
 }
