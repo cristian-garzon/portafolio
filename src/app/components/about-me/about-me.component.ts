@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemePalette } from '@angular/material/core';
+import { ProgressBarMode } from '@angular/material/progress-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { endPoint } from 'src/app/config/app';
 import { Skill } from 'src/app/model/skill';
@@ -14,7 +16,10 @@ export class AboutMeComponent implements OnInit {
 
   skill: Skill[] = [];
   url = endPoint + '/Skill/show_image/'
-
+   color: ThemePalette = 'accent';
+  mode: ProgressBarMode = 'determinate';
+  value = 100;
+  bufferValue = 75;
   constructor(private service: SkillService, private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {

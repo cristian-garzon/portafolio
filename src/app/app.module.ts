@@ -13,6 +13,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HttpClientModule } from '@angular/common/http';
 import { ProjectsComponent } from './components/projects/projects.component';
 import {MatCardModule} from '@angular/material/card';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 
 
 @NgModule({
@@ -31,7 +33,8 @@ import {MatCardModule} from '@angular/material/card';
     AngularFullpageModule,
     FontAwesomeModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 export class Skill {
     id?: number;
-    progessBar?: number;
+    progressBar?: number;
     imageHashCode?: number; 
 }

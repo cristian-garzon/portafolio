@@ -41,6 +41,15 @@
                 [src]="url + item.id"
                 class="img-thubnail rounded images image"
               />
+              <mat-progress-bar
+              style="height: 20px;"
+                class="example-margin my-3"
+                [color]="color"
+                [mode]="mode"
+                [value]="item.progressBar"
+                [bufferValue]="bufferValue"
+              >
+              </mat-progress-bar>
             </div>
           </div>
 
