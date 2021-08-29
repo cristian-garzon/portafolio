@@ -32,17 +32,32 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <p class="display-1">skills</p>
-            </div>
-            <div class="carousel-item my-3" *ngFor="let item of skill">
+            <div class="carousel-item active my-3">
               <img
-                *ngIf="item.imageHashCode"
+                *ngIf="skill[0].imageHashCode"
+                [src]="url + skill[0].id"
+                class="img-thubnail rounded images image"
+              />
+              <mat-progress-bar
+                style="height: 20px"
+                class="example-margin my-3"
+                [color]="color"
+                [mode]="mode"
+                [value]="skill[0].progressBar"
+                [bufferValue]="bufferValue"
+              >
+              </mat-progress-bar>
+            </div>
+            <div
+              class="carousel-item my-3"
+              *ngFor="let item of skill.slice(1); let i = index"
+            >
+              <img
                 [src]="url + item.id"
                 class="img-thubnail rounded images image"
               />
               <mat-progress-bar
-              style="height: 20px;"
+                style="height: 20px"
                 class="example-margin my-3"
                 [color]="color"
                 [mode]="mode"

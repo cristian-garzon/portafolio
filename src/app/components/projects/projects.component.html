@@ -20,51 +20,25 @@
                 >
                   <div
                     class="carousel-inner"
-                    *ngFor="let images of item.images; let i = index"
                   >
                     <div
                       class="carousel-item active"
                     >
                       <img
-                        *ngIf="images.pictureHashCode && i == 0"
-                        [src]="url + item.id + '/' + images.id"
+                        [src]="url + item.id + '/' + item.images[0].id"
                         class="img-thubnail rounded images image"
                       />
                     </div>
                     <div
                       class="carousel-item my-3"
+                    *ngFor="let images of item.images.slice(1); let i = index"
                     >
                       <img
-                        *ngIf="images.pictureHashCode && i != 0"
                         [src]="url + item.id + '/' + images.id"
                         class="img-thubnail rounded images image"
                       />
                     </div>
                   </div>
-                  <button
-                    class="carousel-control-prev"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev"
-                  >
-                    <span
-                      class="carousel-control-prev-icon arrows"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button
-                    class="carousel-control-next"
-                    type="button"
-                    data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next"
-                  >
-                    <span
-                      class="carousel-control-next-icon arrows"
-                      aria-hidden="true"
-                    ></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
                 </div>
               </div>
             </div>
