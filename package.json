@@ -27,6 +27,7 @@
     "@popperjs/core": "^2.9.3",
     "bootstrap": "^5.0.2",
     "jquery": "^3.6.0",
+    "ng2-pdf-viewer": "^7.0.1",
     "ngx-fullpage": "^5.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",

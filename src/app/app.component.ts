@@ -17,7 +17,7 @@ export class AppComponent {
     this.config = {
 
       // fullpage options
-      anchors: ['welcome', 'about-me', 'thirdPage', 'fourthPage', 'lastPage'],
+      anchors: ['welcome', 'about-me', 'projects', 'contact-me', 'contact to me'],
       menu: '#menu',
 
       // fullpage callbacks

@@ -14,7 +14,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProjectsComponent } from './components/projects/projects.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
-
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { CurriculumComponent } from './components/curriculum/curriculum.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     AboutMeComponent,
     WhoAmIComponent,
     ProjectsComponent,
+    CurriculumComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     FontAwesomeModule,
     HttpClientModule,
     MatCardModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    PdfViewerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
