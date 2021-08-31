@@ -27,8 +27,4 @@ export class AboutMeComponent implements OnInit {
       this.skill = skills;
     }); 
   }
-  curriculum() :void {
-    this.router.navigate(['curriculum']);
-  }
-
 }

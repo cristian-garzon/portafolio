@@ -16,6 +16,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { CurriculumComponent } from './components/curriculum/curriculum.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FullPageComponent } from './components/full-page/full-page.component';
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import { CurriculumComponent } from './components/curriculum/curriculum.componen
     WhoAmIComponent,
     ProjectsComponent,
     CurriculumComponent,
+    NavbarComponent,
+    FullPageComponent,
   ],
   imports: [
     BrowserModule,
