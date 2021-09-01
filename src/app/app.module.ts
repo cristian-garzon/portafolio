@@ -18,6 +18,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { CurriculumComponent } from './components/curriculum/curriculum.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FullPageComponent } from './components/full-page/full-page.component';
+import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -30,6 +32,7 @@ import { FullPageComponent } from './components/full-page/full-page.component';
     CurriculumComponent,
     NavbarComponent,
     FullPageComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { FullPageComponent } from './components/full-page/full-page.component';
     HttpClientModule,
     MatCardModule,
     MatProgressBarModule,
-    PdfViewerModule
+    PdfViewerModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
