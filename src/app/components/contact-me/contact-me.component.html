@@ -4,6 +4,7 @@
     <div class="mb-3">
       <label for="name" class="form-label">name</label>
       <input
+      [(ngModel)]="feedback.name"
         type="name"
         class="form-control"
         id="name"
@@ -13,6 +14,7 @@
     <div class="mb-3">
       <label for="email" class="form-label">Email</label>
       <input
+      [(ngModel)]="feedback.email"
         type="email"
         class="form-control"
         id="email"
@@ -24,12 +26,13 @@
         >message</label
       >
       <textarea
+      [(ngModel)]="feedback.feedback"
         class="form-control"
         id="exampleFormControlTextarea1"
         rows="3"
       ></textarea>
     </div>
-    <button class="btn btn-primary" style="width: 100%;">send</button>
+    <button class="btn btn-primary" (click)="send()" style="width: 100%;">send</button>
   </div>
 </div>
 <app-footer></app-footer>

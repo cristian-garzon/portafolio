@@ -20,7 +20,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FullPageComponent } from './components/full-page/full-page.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatCardModule,
     MatProgressBarModule,
     PdfViewerModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
