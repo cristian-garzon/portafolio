@@ -10,6 +10,7 @@ import Swal from 'sweetalert2';
 })
 export class ContactMeComponent implements OnInit {
   feedback = new Feedback();
+  error?: any;
 
   constructor(private service: FeedbackService) {}
 
@@ -18,6 +19,10 @@ export class ContactMeComponent implements OnInit {
   public send(): void {
     this.service.sendMessage(this.feedback).subscribe(() => {
      Swal.fire('message send',"i'll contact with you as soon as possible",'success'); 
-    });
+     this.feedback.email = '';
+     this.feedback.feedback = '';
+     this.feedback.name = '';
+    },err => {
+      if(err.status === 400) this.error = err.error});
   }
 }

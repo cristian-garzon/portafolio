@@ -2,37 +2,48 @@
   <p class="title" style="font-size: 2vw">Contact me</p>
   <div class="form">
     <div class="mb-3">
-      <label for="name" class="form-label">name</label>
+      <label for="name" class="form-label">name/enterprise</label>
       <input
-      [(ngModel)]="feedback.name"
+        [(ngModel)]="feedback.name"
         type="name"
         class="form-control"
         id="name"
         placeholder="cristian"
       />
+      <div class="alert alert-danger my-2" *ngIf="error?.name">
+        {{ error.name }}
+      </div>
     </div>
     <div class="mb-3">
       <label for="email" class="form-label">Email</label>
       <input
-      [(ngModel)]="feedback.email"
+        [(ngModel)]="feedback.email"
         type="email"
         class="form-control"
         id="email"
         placeholder="example@gmail.com"
       />
+      <div class="alert alert-danger my-2" *ngIf="error?.email">
+        {{ error.email }}
+      </div>
     </div>
     <div class="mb-3">
       <label for="exampleFormControlTextarea1" class="form-label"
         >message</label
       >
       <textarea
-      [(ngModel)]="feedback.feedback"
+        [(ngModel)]="feedback.feedback"
         class="form-control"
         id="exampleFormControlTextarea1"
         rows="3"
       ></textarea>
+      <div class="alert alert-danger my-2" *ngIf="error?.feedback">
+        {{ error.feedback }}
+      </div>
     </div>
-    <button class="btn btn-primary" (click)="send()" style="width: 100%;">send</button>
+    <button class="btn btn-primary" (click)="send()" style="width: 100%">
+      send
+    </button>
   </div>
 </div>
 <app-footer></app-footer>
