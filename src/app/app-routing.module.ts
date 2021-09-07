@@ -4,6 +4,7 @@ import { CurriculumComponent } from './components/curriculum/curriculum.componen
 import { FullPageComponent } from './components/full-page/full-page.component';
 
 const routes: Routes = [
+  {path:'', pathMatch:'full', redirectTo:'fullPage'},
   {path: 'curriculum', component:CurriculumComponent},
   {path: 'fullPage', component:FullPageComponent}
 ];

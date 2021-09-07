@@ -8,4 +8,5 @@ export class Project {
     start?: string
     end?: string;
     workStation?: string;
+    webSite?: string;
 }

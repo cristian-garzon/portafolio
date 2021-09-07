@@ -27,4 +27,7 @@ export class ProjectsComponent implements OnInit {
   public repository(project: Project):void{
     window.open(project.urlRepo, "_blank");
   }
+  public webSite(project: Project):void{
+    window.open(project.webSite, "_blank");
+  }
 }

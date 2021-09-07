@@ -50,6 +50,7 @@
             <button (click)="repository(item)" class="btn btn-success">
               repository
             </button>
+            <button *ngIf="item.webSite" (click)="webSite(item)" class="btn btn-primary mx-2">web site</button>
           </mat-card-actions>
         </mat-card>
       </div>
