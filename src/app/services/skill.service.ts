@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { endPoint } from '../config/app';
+import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { Skill } from '../model/skill';
 @Injectable({
   providedIn: 'root',
 })
 export class SkillService {
-  protected endPoint = endPoint + '/Skill';
+  protected endPoint = environment.endPoint + '/Skill';
   protected header: HttpHeaders = new HttpHeaders({
     'Content-Type': 'application/json',
   });

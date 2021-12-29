@@ -15,6 +15,6 @@ export class FeedbackService {
   constructor(private http: HttpClient) {}
 
   public sendMessage(feedback: Feedback): Observable<void> {
-    return this.http.post<void>(this.endPoint+'/send',feedback,{headers:this.header});
+    return this.http.post<void>(this.endPoint+'/send_mail',feedback,{headers:this.header});
   }
 }
