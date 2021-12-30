@@ -7,7 +7,7 @@
             <mat-card-title>{{ item.workStation }}</mat-card-title>
             <mat-card-subtitle
               >{{ item.start | date: "yyyy-MM-dd" }} -
-              {{ item.end | date: "yyy-MM-dd" }}</mat-card-subtitle
+              {{ item.end | date: "yyyy-MM-dd" }}</mat-card-subtitle
             >
           </mat-card-header>
           <div class="control-img">
@@ -47,10 +47,10 @@
             <p class="description">{{ item.description }}</p>
           </mat-card-content>
           <mat-card-actions>
-            <button (click)="repository(item)" class="btn btn-success">
+            <button (click)="repository(item)" class="btn btn-success buttons">
               repository
             </button>
-            <button *ngIf="item.webSite" (click)="webSite(item)" class="btn btn-primary mx-2">web site</button>
+            <button *ngIf="item.webSite" (click)="webSite(item)" class="btn btn-primary buttons">web site</button>
           </mat-card-actions>
         </mat-card>
       </div>
