@@ -1,5 +1,5 @@
 <div class="container contenedor" style="align-items: center">
-  <p class="title" style="font-size: 2vw">Contact me</p>
+  <p class="title">Contact me</p>
   <div class="form">
     <div class="mb-3">
       <label for="name" class="form-label">name/enterprise</label>
@@ -10,7 +10,7 @@
         id="name"
         placeholder="cristian"
       />
-      <div class="alert alert-danger my-2" *ngIf="error?.name">
+      <div class="alert alert-danger" *ngIf="error?.name">
         {{ error.name }}
       </div>
     </div>
@@ -23,7 +23,7 @@
         id="email"
         placeholder="example@gmail.com"
       />
-      <div class="alert alert-danger my-2" *ngIf="error?.email">
+      <div class="alert alert-danger" *ngIf="error?.email">
         {{ error.email }}
       </div>
     </div>
@@ -36,8 +36,10 @@
         class="form-control"
         id="exampleFormControlTextarea1"
         rows="3"
+        style="height: 10px;"
+        placeholder="i need your contact for a job"
       ></textarea>
-      <div class="alert alert-danger my-2" *ngIf="error?.feedback">
+      <div class="alert alert-danger " *ngIf="error?.feedback">
         {{ error.feedback }}
       </div>
     </div>
