@@ -22,3 +22,12 @@
   font-size: 3vw;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+@media screen  and (max-width: 480px) {
+  .who2{
+    font-size: 5vw;
+  }
+  .who{
+    font-size: 10vw;
+  }
+}

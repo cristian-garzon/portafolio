@@ -1,52 +1,28 @@
 @import "~fullpage.js/dist/fullpage.min.css";
-.aboutMe {
-  color: black;
-  width: 50%;
-  height: 100%;
-  position: absolute;
-}
-.skills {
-  position: absolute;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-}
-.contenedor {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
 .title {
   font-family: cursive;
   font-size: 4vw;
-  position: absolute;
   top: 20%;
 }
 .paragraph {
-  width: 90%;
+  width: 50%;
   line-height: 100%;
   height: 50%;
-  position: absolute;
-  font-size: 2vw;
-  top: 35%;
+  font-size: 2.6vw;
+  margin-left: 1%;
+  left: 0;
   font-family: serif;
+  position: absolute;
 }
 .tecnologies {
-  background-color: gray;
-  opacity: 0.7;
+  height: 45%;
+  width: 40%;
+  top: 30%;
+  position: absolute;
+  margin-left: 3%;
 }
 .content-skills {
-  position: absolute;
   text-align: center;
-}
-.buttons {
-  position: absolute;
-  height: 3%;
-  top: 45%;
-}
-.arrows {
-  position: absolute;
-  top: 25%;
 }
 .images {
   text-align: center;
@@ -68,3 +44,27 @@
   left: 50%;
   top: 50%;
 }
+.progress{
+  height: 20px;
+}
+
+@media screen  and (max-width: 480px) {
+  .paragraph{
+    width: 100%;
+    font-size: 5vw;
+    top: 5%;
+  }
+  .title{
+    font-size: 7vw;
+  }
+  .tecnologies{
+    top: 40%;
+  }
+  .tecnologies{
+    width: 100%;
+    margin-left: 0; 
+    top: 60%;
+    left: 0;
+  }
+}
+  

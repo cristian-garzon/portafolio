@@ -1,97 +1,74 @@
-<section class="contenedor">
-  <div class="aboutMe">
-    <p class="display-1 title">about me</p>
-    <div class="paragraph">
-      <b
-        style="
-          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        "
-        >hey :D, i'm Cristian Garzon - BackEnd developer</b
-      >
-      <br />
-      <p>
-        2 years of experience in creating projects with java, six months
-        creating REST API with spring boot framework, intermediate level in
-        spring boot, intermediate level in microservice architecture with spring
-        cloud in netflix eureka. In my spare time I do competitive programming
-        from codeforces in c ++. Good in teamwork, good communication with
-        teammates is necessary to be able to move forward with the project in
-        question. In constant learning, I like to continue advancing my
-        knowledge by doing various online courses such as udemy courses. One
-        year of experience in different linux distributions.
-      </p>
-    </div>
-  </div>
-  <div class="skills">
-    <div class="tecnologies paragraph">
-      <div class="content-skills">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
+<section class="container">
+  <div class="row">
+    <div class="col">
+      <div class="paragraph">
+      <p class="display-1 title">about me</p>
+        <b
+          style="
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          "
+          >hey :D, i'm Cristian Garzon - BackEnd developer</b
         >
-          <div class="carousel-inner">
-            <div class="carousel-item active my-3">
-              <img
-                *ngIf="skill[0].imageHashCode"
-                [src]="url + skill[0].id"
-                class="img-thubnail rounded images image"
-              />
-              <mat-progress-bar
-                style="height: 20px"
-                class="example-margin my-3"
-                [color]="color"
-                [mode]="mode"
-                [value]="skill[0].progressBar"
-                [bufferValue]="bufferValue"
+        <br />
+        <p>
+          2 years of experience in creating projects with java, 1 year 
+          creating REST API with spring boot framework, intermediate level in
+          spring boot, intermediate level in microservice architecture with
+          spring cloud in netflix eureka. In my spare time I do competitive
+          programming from codeforces in c ++. Good in teamwork, good
+          communication with teammates is necessary to be able to move forward
+          with the project in question. In constant learning, I like to continue
+          advancing my knowledge by doing various online courses such as udemy
+          courses. One year of experience in different linux distributions.
+        </p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="tecnologies">
+        <div class="content-skills">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active my-3">
+                <img
+                  *ngIf="skill[0].imageHashCode"
+                  [src]="url + skill[0].id"
+                  class="img-thubnail rounded images image"
+                />
+                <mat-progress-bar
+                  style="height: 20px"
+                  class="my-3 progress"
+                  [color]="color"
+                  [mode]="mode"
+                  [value]="skill[0].progressBar"
+                  [bufferValue]="bufferValue"
+                >
+                </mat-progress-bar>
+              </div>
+              <div
+                class="carousel-item my-3"
+                *ngFor="let item of skill.slice(1); let i = index"
               >
-              </mat-progress-bar>
-            </div>
-            <div
-              class="carousel-item my-3"
-              *ngFor="let item of skill.slice(1); let i = index"
-            >
-              <img
-                [src]="url + item.id"
-                class="img-thubnail rounded images image"
-              />
-              <mat-progress-bar
-                style="height: 20px"
-                class="example-margin my-3"
-                [color]="color"
-                [mode]="mode"
-                [value]="item.progressBar"
-                [bufferValue]="bufferValue"
-              >
-              </mat-progress-bar>
+                <img
+                  [src]="url + item.id"
+                  class="img-thubnail rounded images image"
+                />
+                <mat-progress-bar
+                  style="height: 20px"
+                  class="my-3 progress"
+                  [color]="color"
+                  [mode]="mode"
+                  [value]="item.progressBar"
+                  [bufferValue]="bufferValue"
+                >
+                </mat-progress-bar>
+              </div>
             </div>
           </div>
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span
-              class="carousel-control-prev-icon arrows"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span
-              class="carousel-control-next-icon arrows"
-              aria-hidden="true"
-            ></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
       </div>
     </div>
