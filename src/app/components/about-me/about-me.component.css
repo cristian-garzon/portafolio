@@ -3,8 +3,16 @@
   font-family: cursive;
   font-size: 4vw;
   top: 20%;
+  color: white;
+}
+.contenedor{
+  position: relative;
+  width: 100%;
+  background-image: url("../../../assets/images/about-me.jpg");
+  height: 100%;
 }
 .paragraph {
+  color: white;
   width: 50%;
   line-height: 100%;
   height: 50%;

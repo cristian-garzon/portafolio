@@ -2,21 +2,20 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 20%;
-    left: 33%;
-    text-align: center;
-    align-content: center;
+    background-image: url("../../../assets/images/contact-me.jpg");
 }
 .form{
+    left: 34%;
     text-align: left;
     position: absolute;
     width: 35vw;
-    top: 5%;
+    top: 20%;
 }
 .title{
+    top: 10%;
     position: absolute;
     text-align: center;
-    left: 11%;
+    left: 41%;
     font-size: 4vw;
 }
 
