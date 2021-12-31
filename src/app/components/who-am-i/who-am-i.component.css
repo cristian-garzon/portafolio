@@ -29,8 +29,15 @@
 @media screen  and (max-width: 480px) {
   .who2{
     font-size: 5vw;
+    left: 50%;
+    top: 70%;
   }
   .who{
     font-size: 10vw;
+    top: 30%;
+    left: 50%;
+  }
+  .contenedor{
+    background-image: url("../../../assets/images/i-am-mobile.jpg");
   }
 }

@@ -16,10 +16,6 @@ export class AboutMeComponent implements OnInit {
 
   skill: Skill[] = [];
   url = endPoint + '/Skill/show_image/'
-   color: ThemePalette = 'accent';
-  mode: ProgressBarMode = 'determinate';
-  value = 100;
-  bufferValue = 75;
   constructor(private service: SkillService, private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {

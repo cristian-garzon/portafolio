@@ -35,17 +35,16 @@
             <div class="carousel-inner">
               <div class="carousel-item active my-3">
                 <img
-                  *ngIf="skill[0].imageHashCode"
+                  *ngIf="skill.length >= 1"
                   [src]="url + skill[0].id"
                   class="img-thubnail rounded images image"
                 />
                 <mat-progress-bar
-                  style="height: 20px"
-                  class="my-3 progress"
-                  [color]="color"
-                  [mode]="mode"
+                  *ngIf="skill.length >= 1"
+                  style="height: 10px"
+                  mode="determinate"
                   [value]="skill[0].progressBar"
-                  [bufferValue]="bufferValue"
+                  class="my-3"
                 >
                 </mat-progress-bar>
               </div>
@@ -58,12 +57,9 @@
                   class="img-thubnail rounded images image"
                 />
                 <mat-progress-bar
-                  style="height: 20px"
-                  class="my-3 progress"
-                  [color]="color"
-                  [mode]="mode"
+                  style="height: 10px"
+                  class="my-3"
                   [value]="item.progressBar"
-                  [bufferValue]="bufferValue"
                 >
                 </mat-progress-bar>
               </div>
