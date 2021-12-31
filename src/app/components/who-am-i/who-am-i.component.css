@@ -1,13 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Righteous&display=swap');
 .who {
   text-align: center;
   align-items: center;
   position: absolute;
   top: 30%;
   left: 30%;
-  color: white;
+  color: rgba(255, 255, 255, 0.979);
   transform: translate(-50%,-30%);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 8vw;
+  font-family: 'Acme', sans-serif;
+  font-size: 7vw;
 }
 .contenedor {
   width: 100%;
@@ -23,18 +24,19 @@
   transform: translate(-50%, -20%);
   font-family: serif;
   font-size: 3vw;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: 'Righteous', cursive;
 }
 
 @media screen  and (max-width: 480px) {
   .who2{
     font-size: 5vw;
     left: 50%;
-    top: 70%;
+    top: 25%;
+    text-align: center;
   }
   .who{
     font-size: 10vw;
-    top: 30%;
+    top: 10%;
     left: 50%;
   }
   .contenedor{
