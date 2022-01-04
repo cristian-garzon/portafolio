@@ -1,18 +1,19 @@
-@import "~fullpage.js/dist/fullpage.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Righteous&display=swap');
 .title {
-  font-family: cursive;
+  font-family: 'Righteous', cursive;
   font-size: 4vw;
   top: 20%;
-  color: white;
+  color: rgb(216, 216, 216);
+  text-align: center;
 }
 .contenedor{
-  position: relative;
   width: 100%;
-  background-image: url("../../../assets/images/about-me.jpg");
   height: 100%;
 }
 .paragraph {
-  color: white;
+  color: rgb(26, 23, 23);
+  font-family: 'Almarai', sans-serif;
+  text-align: justify;
   width: 50%;
   line-height: 100%;
   height: 50%;
@@ -58,15 +59,14 @@
 
 @media screen  and (max-width: 480px) {
   .paragraph{
-    width: 100%;
+    width: 90%;
     font-size: 5vw;
     top: 5%;
+    left: 5%;
+    text-align: center;
   }
   .title{
     font-size: 7vw;
-  }
-  .tecnologies{
-    top: 40%;
   }
   .tecnologies{
     width: 100%;
