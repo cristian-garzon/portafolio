@@ -1,23 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nobile:wght@500&family=Source+Code+Pro:wght@600&display=swap');
 .title {
-  font-family: 'Righteous', cursive;
+  font-family: "Fredoka one", cursive;
   font-size: 4vw;
   top: 20%;
-  color: rgb(216, 216, 216);
+  color: rgb(47, 40, 40);
   text-align: center;
 }
-.contenedor{
+.contenedor {
   width: 100%;
   height: 100%;
 }
+.description {
+  font-family: "Nobile", sans-serif;
+  color: rgb(47, 40, 40);
+}
+.description b {
+  font-weight: 900;
+}
+
+.description p {
+  font-weight: 500;
+}
+
 .paragraph {
-  color: rgb(26, 23, 23);
-  font-family: 'Almarai', sans-serif;
   text-align: justify;
   width: 50%;
   line-height: 100%;
   height: 50%;
-  font-size: 2.6vw;
+  font-size: 2.15vw;
   margin-left: 1%;
   left: 0;
   font-family: serif;
@@ -41,38 +51,53 @@
   height: 50%;
   opacity: 1;
 }
-.image{
+.image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-attachment: fixed;
 }
-.images-skill{
+.images-skill {
   position: absolute;
   left: 50%;
   top: 50%;
 }
-.progress{
+.progress {
   height: 20px;
 }
 
-@media screen  and (max-width: 480px) {
-  .paragraph{
+@media screen and (max-width: 480px) {
+  .paragraph {
     width: 90%;
-    font-size: 5vw;
+    font-size: 2.4vh;
     top: 5%;
     left: 5%;
-    text-align: center;
   }
-  .title{
+
+  .title {
     font-size: 7vw;
+    color: white;
   }
-  .tecnologies{
+
+  .description {
+    color: rgb(255, 255, 255);
+    margin-left: 0;
+    font-family: "Source Code Pro", monospace;
+  }
+
+  .description b {
+    font-weight: 500;
+  }
+
+  .description b {
+    font-weight: 300;
+  }
+
+  .tecnologies {
     width: 100%;
-    margin-left: 0; 
-    top: 60%;
+    margin-left: 0;
+    top: 65%;
     left: 0;
   }
 }
-  

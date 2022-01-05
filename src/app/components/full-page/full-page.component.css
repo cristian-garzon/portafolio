@@ -13,14 +13,25 @@
   background-position: center;
 }
 #section1 {
-  background-image: url("../../../assets/images/projects.jpg");
-  background-position: center ;
+  background-image: url("../../../assets/images/about-me.jpg");
+  background-position: center;
 }
 #section2 {
-  background-image: url("../../../assets/images/about-me.jpg");
+  background-image: url("../../../assets/images/projects.jpg");
   background-position: center;
 }
 #section3 {
   background-image: url("../../../assets/images/contact-me.jpg");
   background-position: center;
+}
+
+@media screen and (max-width: 480px) {
+  #section0 {
+    background-image: url("../../../assets/images/i-am-mobile.jpg");
+    background-position: center;
+  }
+  #section1 {
+    background-image: url("../../../assets/images/skills-mobile.jpg");
+    background-position: center;
+  }
 }

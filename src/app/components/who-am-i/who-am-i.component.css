@@ -30,15 +30,12 @@
   .who2{
     font-size: 5vw;
     left: 50%;
-    top: 25%;
+    top: 72%;
     text-align: center;
   }
   .who{
     font-size: 10vw;
-    top: 10%;
+    top: 22%;
     left: 50%;
-  }
-  .contenedor{
-    background-image: url("../../../assets/images/i-am-mobile.jpg");
   }
 }
